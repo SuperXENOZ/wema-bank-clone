@@ -1457,10 +1457,17 @@ button {
 }
 
 .sme-button:hover {
-    background: #8c147d;
+    /* background: #8c147d;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(162, 27, 145, 0.2);
+    box-shadow: 0 8px 20px rgba(162, 27, 145, 0.2); */
+     background: white;
+
+    color: #a21b91;
+    border-color:#a21b91 !important;
+
+    transform: translateY(-2px);
+    border: 1px solid #a21b91
 }
 
 .sme-button:hover i {
@@ -1514,6 +1521,8 @@ button {
 .sme-service-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.11);
+    background: white;
+    
 }
 
 .sme-service-icon {
@@ -1817,14 +1826,17 @@ button {
 }
 
 .custom-cards-button:hover {
-    background: #8c147d;
+    background: white;
 
-    color: #ffffff;
+    color: #a21b91;
+    border-color:#a21b91 !important;
 
     transform: translateY(-2px);
+    border: 1px solid #a21b91;
 
     box-shadow:
-        0 8px 20px rgba(162, 27, 145, 0.2);
+        /* 0 8px 20px rgba(162, 27, 145, 0.2); */
+
 }
 
 .custom-cards-button:hover i {
@@ -2073,10 +2085,17 @@ button {
 }
 
 .alatpay-button:hover {
-    background: #8c147d;
+    /* background: #8c147d;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(162, 27, 145, 0.2);
+    box-shadow: 0 8px 20px rgba(162, 27, 145, 0.2); */
+     background: white;
+
+    color: #a21b91;
+    border-color:#a21b91 !important;
+
+    transform: translateY(-2px);
+    border: 1px solid #a21b91
 }
 
 .alatpay-button:hover i {
@@ -4415,6 +4434,13 @@ button {
 
 .newsletter-form button:hover {
     background: #801475;
+     background: white;
+
+    color: #a21b91;
+    border-color:#a21b91 !important;
+    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
+    border: 1px solid #a21b91
 }
 
 .footer-main {
