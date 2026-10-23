@@ -5,13 +5,11 @@
 }
 
 
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #5a6179;
-    /* background-color: white; */
+    color: #555b70;
+    background: #ffffff;
     overflow-x: hidden;
-     background: white;
 }
 
 a {
@@ -19,13 +17,14 @@ a {
     color: inherit;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 button,
 input {
     font: inherit;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 button {
@@ -33,23 +32,23 @@ button {
 }
 
 .header {
-    background: white;
+    width: 100%;
+    background: #ffffff;
     position: relative;
-     width: 100%;
     z-index: 1000;
 }
 
 .header-top {
-    padding: 0 62px;
     height: 60px;
-    align-items: center;
     display: flex;
-    border-bottom: 1px solid #f5f3f3;
+    align-items: center;
+    padding: 0 60px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .logo {
-    width: 180px;
-    flex-shrink: 1;
+    width: 210px;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -57,16 +56,16 @@ button {
     display: block;
 }
 
-.first-nav {
-    align-items: center;
+.primary-nav {
     display: flex;
-    flex: 1;
-    gap: 24px;
-    height: 100%;
+    align-items: center;
     justify-content: center;
+    gap: 24px;
+    flex: 1;
+    height: 100%;
 }
 
-.first-nav a {
+.primary-nav a {
     height: 100%;
     display: flex;
     align-items: center;
@@ -77,73 +76,73 @@ button {
     transition: 0.25s ease;
 }
 
-.first-nav a:hover,
-.first-nav a.active {
+.primary-nav a:hover,
+.primary-nav a.active {
     color: #a21c91;
 }
 
-.first-nav a.active::after {
+.primary-nav a.active::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     height: 2px;
-    background: #b41fa0;
+    background: #a21c91;
 }
 
-.login-btn {
-    align-items: center;
-    background: #9c218c;
-    border-radius: 25px;
+.login-button {
     min-width: 200px;
-    gap: 8px;
-    height: 40px;
+    height: 38px;
     padding: 0 18px;
-    color: white;
+    border-radius: 25px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 14px;
+    gap: 8px;
+    background: #a21c91;
+    color: #ffffff;
+    font-size: 13px;
 }
 
-.login-btn:hover {
+.login-button:hover {
     background: #851477;
-    color: white;
+    color: #ffffff;
 }
 
-.menu-btn {
+.menu-button {
     display: none;
-    font-size: 28px;
     border: none;
     background: transparent;
-    color: #991b88;
+    color: #a21c91;
+    font-size: 28px;
 }
 
 .header-bottom {
-    align-items: center;
-    height: 59px;
-    border-bottom: 1px solid #f8f3f3;
-    display: flex;
+    height: 57px;
     padding: 0 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
     position: relative;
     z-index: 100;
 }
 
-.second-nav {
+.secondary-nav {
     height: 100%;
     display: flex;
     align-items: center;
     gap: 28px;
 }
 
-.second-item {
+.secondary-item {
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
 }
 
-.second-item>a {
+.secondary-item>a {
     height: 100%;
     display: flex;
     align-items: center;
@@ -154,33 +153,33 @@ button {
     transition: color 0.2s ease;
 }
 
-.second-item>a:hover {
-    color: #9b1b8a;
+.secondary-item>a:hover {
+    color: #a21c91;
 }
 
-.second-item:hover>a {
-    color: #9b1b8a;
+.secondary-item:hover>a {
+    color: #a21c91;
 }
 
-.second-item:hover>a::after {
+.secondary-item:hover>a::after {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
     bottom: 7px;
     height: 2px;
-    background: #9b1b8a;
+    background: #a21c91;
 }
 
 .dropdown-menu {
     position: absolute;
-    top: 58px;
+    top: 57px;
     left: 50%;
     transform: translateX(-50%);
-    flex-direction: column;
-    background: white;
-    box-shadow: 0 4px 12px rgba(4, 4, 4, 0.12);
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     display: none;
+    flex-direction: column;
     padding: 12px 0;
     z-index: 9999;
 }
@@ -198,7 +197,7 @@ button {
     border-bottom: 9px solid #ffffff;
 }
 
-.second-item:hover .dropdown-menu {
+.secondary-item:hover .dropdown-menu {
     display: flex;
 }
 
@@ -215,8 +214,8 @@ button {
 }
 
 .dropdown-menu a:hover {
-    background: #fffefe;
-    color: #9b1b8a;
+    background: #f8f8f8;
+    color: #a21c91;
 }
 
 .careers-menu .dropdown-menu {
@@ -224,11 +223,11 @@ button {
 }
 
 .investors-menu .dropdown-menu {
-    width: 180px;
+    width: 175px;
 }
 
 .sustainability-menu .dropdown-menu {
-    width: 270px;
+    width: 265px;
 }
 
 .resource-menu .dropdown-menu {
@@ -236,11 +235,11 @@ button {
 }
 
 .careers-menu .dropdown-menu a {
-    min-height: 48px;
+    min-height: 45px;
 }
 
 .investors-menu .dropdown-menu a {
-    min-height: 49px;
+    min-height: 47px;
 }
 
 .sustainability-menu .dropdown-menu a {
@@ -251,21 +250,20 @@ button {
     min-height: 46px;
 }
 
-.search-btn {
-    border-radius: 50%;
-    background: #a01b8e;
-    color: #ffffff;
-    cursor: pointer;
+.search-button {
+    width: 34px;
     height: 34px;
     margin-left: auto;
     border: none;
-    width: 34px;
+    border-radius: 50%;
+    background: #a21c91;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-.search-btn:hover {
-    background: #841377;
+.search-button:hover {
+    background: #851477;
 }
-
 
 .hero {
     width: 100%;
@@ -275,13 +273,11 @@ button {
     background: #ffffff;
 }
 
-
 .hero-slider {
     width: 100%;
     height: 100%;
     position: relative;
 }
-
 
 .hero-slide {
     position: absolute;
@@ -292,8 +288,8 @@ button {
     opacity: 0;
     visibility: hidden;
     transition:
-      opacity 0.6s ease,
-      visibility 0.8s ease;
+        opacity 0.8s ease,
+        visibility 0.8s ease;
 }
 
 .hero-slide.active {
@@ -356,7 +352,7 @@ button {
 }
 
 .slide-one {
-    background: #ffffff;
+    background: white;
 }
 
 .slide-two {
@@ -564,7 +560,7 @@ button {
 
 .slide-seven .slide-content h1 {
     margin: 0;
-    color: white;
+    color: #ffffff;
     font-size: clamp(38px, 4vw, 58px);
     line-height: 1.08;
     font-weight: 700;
@@ -572,7 +568,7 @@ button {
 
 .slide-seven .slide-content h1 strong {
     display: block;
-    color: white;
+    color: #ffffff;
     font-weight: 700;
 }
 
@@ -650,7 +646,7 @@ button {
     transform: translateY(-50%);
     width: 37%;
     text-align: left;
-    color: black;
+    color: #000000;
     z-index: 20;
 }
 
@@ -931,7 +927,7 @@ button {
     background: #178de6;
 }
 
-.news{
+.news-ticker {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -978,17 +974,17 @@ button {
 
 .news-item {
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 510;
+    font-size: 13px;
+    font-weight: 500;
     white-space: nowrap;
     padding: 0 24px;
-    transition: color 0.256s ease;
+    transition: color 0.25s ease;
 }
 
 .news-divider {
-    color: rgba(245, 244, 244, 0.8);
-    font-size: 19px;
-    font-weight: 310;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 300;
     flex-shrink: 0;
 }
 
@@ -1091,7 +1087,7 @@ button {
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 317px;
+    height: 310px;
     padding: 42px 23px 25px;
     background: #fff4ff;
     border: none;
@@ -1106,6 +1102,7 @@ button {
 .elevate-card:hover {
     transform: translateY(-20px);
     box-shadow: 0 12px 25px rgba(152, 29, 135, 0.08);
+    /* background-color: #ee05db; */
 }
 
 .elevate-card.elevate-featured {
@@ -1495,7 +1492,7 @@ button {
 .sme-services {
     position: relative;
     z-index: 2;
-    width: 1100px;
+    width: 1098px;
     max-width: calc(100% - 50px);
     margin: 57px auto 0;
     display: grid;
@@ -1504,11 +1501,11 @@ button {
 }
 
 .sme-service-card {
-    min-height: 190px;
-    padding: 24px 24px 20px;
+    min-height: 188px;
+    padding: 22px 22px 20px;
     background: #ffffff;
-    border: 1px solid #e3e1e1;
-    box-shadow: 0 5px 14px black;
+    border: 1px solid #dedede;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.08);
     transition:
         transform 0.1s ease,
         box-shadow 0.3s ease;
@@ -1516,7 +1513,7 @@ button {
 
 .sme-service-card:hover {
     transform: translateY(-15px);
-    box-shadow: 0 10px 22px black;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.11);
 }
 
 .sme-service-icon {
@@ -1699,7 +1696,7 @@ button {
     position: relative;
     width: 100%;
     padding: 70px 0 85px;
-    background: white;
+    background: #ffffff;
     overflow: hidden;
 }
 
@@ -1749,7 +1746,7 @@ button {
 
     margin-bottom: 15px;
 
-    color: #911a81;
+    color: #981d87;
 
     font-size: 14px;
     line-height: 1.2;
@@ -1761,7 +1758,7 @@ button {
 
     margin: 0 0 13px;
 
-    color: #343946;
+    color: #303541;
 
     font-size: 25px;
     line-height: 1.25;
@@ -1775,7 +1772,7 @@ button {
 
     margin: 0;
 
-    color: #6f6f6f;
+    color: #6d6d6d;
 
     font-size: 13px;
     line-height: 1.55;
@@ -1796,11 +1793,11 @@ button {
     margin-top: 18px;
     padding: 0 25px;
 
-    background: #9b1a8a;
+    background: #a21b91;
 
     border-radius: 30px;
 
-    color: white;
+    color: #ffffff;
 
     font-size: 14px;
     font-weight: 500;
@@ -1820,14 +1817,14 @@ button {
 }
 
 .custom-cards-button:hover {
-    background: #9c168a;
+    background: #8c147d;
 
     color: #ffffff;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 8px 20px rgba(162, 30, 144, 0.2);
+        0 8px 20px rgba(162, 27, 145, 0.2);
 }
 
 .custom-cards-button:hover i {
@@ -1869,11 +1866,11 @@ button {
 
         gap: 0;
 
-        min-height: 375px;
+        min-height: 370px;
     }
 
     .custom-cards-content h2 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .custom-cards-content p {
@@ -1881,7 +1878,7 @@ button {
     }
 
     .custom-cards-image {
-        height: 380px;
+        height: 370px;
     }
 
     .custom-cards-image img {
@@ -1972,7 +1969,7 @@ button {
     position: relative;
     width: 100%;
     padding: 35px 0 85px;
-    background: white;
+    background: #ffffff;
     overflow: hidden;
 }
 
@@ -2033,7 +2030,7 @@ button {
 .alatpay-content h2 {
     max-width: 570px;
     margin: 0 0 13px;
-    color: #2e343f;
+    color: #303541;
     font-size: 29px;
     line-height: 1.25;
     font-weight: 700;
@@ -2041,11 +2038,11 @@ button {
 }
 
 .alatpay-content p {
-    max-width: 565px;
+    max-width: 560px;
     margin: 0;
     color: #6d6d6d;
     font-size: 13px;
-    line-height: 1.46;
+    line-height: 1.45;
     font-weight: 400;
 }
 
@@ -2060,7 +2057,7 @@ button {
     padding: 0 25px;
     background: #a21b91;
     border-radius: 30px;
-    color: white;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
@@ -2077,7 +2074,7 @@ button {
 
 .alatpay-button:hover {
     background: #8c147d;
-    color: white;
+    color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(162, 27, 145, 0.2);
 }
@@ -2218,7 +2215,7 @@ button {
 .investor-label {
     display: block;
     margin-bottom: 17px;
-    color: white;
+    color: #ffffff;
     font-size: 14px;
     line-height: 1.2;
     font-weight: 700;
@@ -2226,7 +2223,7 @@ button {
 
 .investor-content h2 {
     margin: 0 0 15px;
-    color: white;
+    color: #ffffff;
     font-size: 31px;
     line-height: 1.13;
     font-weight: 400;
@@ -2236,7 +2233,7 @@ button {
 .investor-content p {
     max-width: 555px;
     margin: 0;
-    color: rgba(252, 248, 248, 0.92);
+    color: rgba(255, 255, 255, 0.92);
     font-size: 13px;
     line-height: 1.45;
     font-weight: 400;
@@ -2247,7 +2244,7 @@ button {
     grid-template-columns: 1fr 1fr;
     column-gap: 55px;
     row-gap: 18px;
-    width: 471px;
+    width: 470px;
     margin-top: 35px;
 }
 
@@ -2261,15 +2258,15 @@ button {
     margin-bottom: 4px;
     color: #ed55d1;
     font-size: 22px;
-    line-height: 1.11;
+    line-height: 1.1;
     font-weight: 700;
 }
 
 .investor-stat span {
-    color: rgba(242, 234, 234, 0.9);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 13px;
     line-height: 1.2;
-    font-weight: 410;
+    font-weight: 400;
 }
 
 .investor-image {
@@ -2295,13 +2292,13 @@ button {
 .investor-card {
     min-height: 134px;
     padding: 23px 23px 20px;
-    background: white;
+    background: #ffffff;
     border: none;
 }
 
 .investor-card h3 {
     margin: 0 0 13px;
-    color: #0b0b0b;
+    color: #111111;
     font-size: 17px;
     line-height: 1.2;
     font-weight: 700;
@@ -2310,7 +2307,7 @@ button {
 .investor-card p {
     max-width: 315px;
     margin: 0;
-    color: #747474;
+    color: #707070;
     font-size: 13px;
     line-height: 1.45;
     font-weight: 400;
@@ -2392,7 +2389,7 @@ button {
 
     .investor-content p {
         max-width: 100%;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.6;
     }
 
@@ -2523,12 +2520,12 @@ button {
 }
 
 .footer-column a {
-    color: #bdc1cb;
+    color: #b6bac5;
     font-size: 12px;
 }
 
 .footer-column a:hover {
-    color: white;
+    color: #ffffff;
 }
 
 .footer-bottom {
@@ -2552,12 +2549,12 @@ button {
 .chat-button {
     position: fixed;
     border: none;
-    color: white;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1500;
-    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .accessibility-button {
@@ -3180,6 +3177,14 @@ button {
     font-size: 13px;
     font-weight: 400;
     color: #777b80;
+}
+
+@media (max-width: 600px) {
+    
+    .quick-links-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
 }
 
 .wema-sustainability {
@@ -4309,7 +4314,7 @@ button {
     width: 100%;
     max-width: 1095px;
     margin: 0 auto;
-    padding: 49px 0 30px;
+    padding: 49px 0 29px;
 }
 
 .footer-newsletter {
@@ -4486,7 +4491,7 @@ button {
     font-weight: 500;
 }
 
-.footer-app-btn {
+.footer-app-button {
     width: 105px;
     height: 35px;
     margin-bottom: 11px;
@@ -4501,22 +4506,22 @@ button {
     text-decoration: none;
 }
 
-.footer-app-btn i {
+.footer-app-button i {
     font-size: 18px;
 }
 
-.footer-app-btn span {
+.footer-app-button span {
     display: flex;
     flex-direction: column;
     line-height: 1;
 }
 
-.footer-app-btn small {
+.footer-app-button small {
     font-size: 5px;
     margin-bottom: 2px;
 }
 
-.footer-app-btn strong {
+.footer-app-button strong {
     font-size: 11px;
     font-weight: 500;
 }
@@ -4573,12 +4578,12 @@ button {
 
 .footer-bottom {
     width: 100%;
-    height: 40px;
+    height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    background: rgb(237, 223, 223);
+    background: #ffffff;
 }
 
 .footer-bottom p {
