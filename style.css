@@ -1834,7 +1834,7 @@ button {
     transform: translateY(-2px);
     border: 1px solid #a21b91;
 
-    box-shadow:
+    /* box-shadow: */
         /* 0 8px 20px rgba(162, 27, 145, 0.2); */
 
 }
