@@ -1219,7 +1219,7 @@ button {
 
 .elevate-shape-two {
     top: 100px;
-    right: 390px;
+    right: 290px;
     width: 100px;
     height: 100px;
 }
@@ -1834,8 +1834,8 @@ button {
 .custom-cards-image {
     position: relative;
 
-    width: 100%;
-    height: 400px;
+    width: 93%;
+    height: 90px;
 
     display: flex;
 
@@ -1846,9 +1846,9 @@ button {
 
 .custom-cards-image img {
     display: block;
-    width: 470px;
-    max-width: 90%;
-    height: auto;
+    width: 40px;
+    max-width: 10%;
+    /* height: auto; */
     object-fit: contain;
     transform: translateX(-5px);
 }
